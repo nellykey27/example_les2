@@ -68,15 +68,14 @@ class homework3 {
 
         driver.findElement(By.xpath("//span[text()='Укажите организацию']/..")).click();
 
+        Thread.sleep(5000);
+
         driver.findElement(By.xpath("//input[@class='select2-input" +
                 " select2-focused']")).sendKeys("Test_from_GB");
-
+        Thread.sleep(5000);
         driver.findElement(By.xpath("//input[@class='select2-input " +
                 "select2-focused']")).sendKeys(Keys.ENTER);
 
-        //crm_project[contactMain]
-        //Select selectContact = new Select(driver.findElement(By.name("crm_project[contactMain]")));
-        //selectContact.selectByVisibleText("Ivanov Ivan");
         Thread.sleep(5000);
         driver.findElement(By.xpath("//div[contains(@id,'s2id_crm_project_contactMain')]/a")).click();
         driver.findElement(By.xpath("//select[@name=\"crm_project[contactMain]\"]/option[3]")).click();
@@ -89,22 +88,22 @@ class homework3 {
 
         driver.switchTo().defaultContent();
 
-        driver.findElement(By.name("crm_project[name]")).sendKeys("test");
+        driver.findElement(By.name("crm_project[name]")).sendKeys("test_homework3");
 
         Select selectPriority = new Select(driver.findElement(By.name("crm_project[priority]")));
-        selectPriority.getFirstSelectedOption();
+        selectPriority.selectByVisibleText("Низкий");
 
         Select selectFinanceSource = new Select(driver.findElement(By.name("crm_project[financeSource]")));
-        selectFinanceSource.getFirstSelectedOption();
+        selectFinanceSource.selectByVisibleText("Из средств заказчика");
 
         Select selectBusinessUnit = new Select(driver.findElement(By.name("crm_project[businessUnit]")));
-        selectBusinessUnit.getFirstSelectedOption();
+        selectBusinessUnit.selectByVisibleText("Research & Development");
 
         Select selectProjectCurator = new Select(driver.findElement(By.name("crm_project[curator]")));
-        selectProjectCurator.getFirstSelectedOption();
+        selectProjectCurator.selectByVisibleText("Applanatest1 Applanatest1 Applanatest1");
 
         Select selectProjectManager = new Select(driver.findElement(By.name("crm_project[rp]")));
-        selectProjectManager.getFirstSelectedOption();
+        selectProjectManager.selectByVisibleText("Applanatest1 Applanatest1 Applanatest1");
 
         Select selectManager = new Select(driver.findElement(By.name("crm_project[manager]")));
         selectManager.selectByVisibleText("Applanatest1 Applanatest1 Applanatest1");
@@ -130,17 +129,12 @@ class homework3 {
         driver.findElement(By.name("crm_project" +
                 "[configManagement]")).sendKeys("Config_testing");
 
-        driver.findElement(By.name("crm_project[name]")).sendKeys("testing_homework3");
-
-        driver.findElement(By.xpath("//button[contains(@data-action," +
-                " '\"route\":\"crm_project_index\"')]")).click();
+        Thread.sleep(7000);
+        driver.findElement(By.xpath("//button[contains(@data-action, '{\"route\":\"crm_project_index\"}')]")).click();
 
         //Проверка
         WebDriverWait webDriverWait1 = new WebDriverWait(driver, 5);
         webDriverWait1.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[text()='Проект сохранен']")));
-
-
-        Thread.sleep(5000);
 
     }
     private static void login(){
