@@ -26,7 +26,7 @@ public class CrmTests {
         login();
     }
         @Test
-                @DisplayName("Создание контакта")
+        @DisplayName("Создание контакта")
         public void createContactPerson() throws InterruptedException {
         Actions actions = new Actions(driver);
             driver.get("https://crm.geekbrains.space/contact/");
