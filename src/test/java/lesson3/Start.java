@@ -23,7 +23,7 @@ class homework3 {
 
     WebDriverManager.chromedriver().setup();
     driver = new ChromeDriver();
-    createProject();
+  createProject();
 
     driver.quit();
 
