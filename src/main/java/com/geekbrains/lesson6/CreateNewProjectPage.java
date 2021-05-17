@@ -4,25 +4,24 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-
-
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.junit.Assert.assertThat;
 
 public class CreateNewProjectPage extends BaseView {
     public CreateNewProjectPage(WebDriver driver) {
         super(driver);
+        PageFactory.initElements(driver, this);
     }
 
-    public By youAreAtCreateNewProjectPageLocator = By.xpath("//h1[contains(text(),'Создать проект')]");
+    public By youAreAtCreateNewProjectPageLocator = By.xpath("//button[@class='btn btn-success action-button']");
 
-    @FindBy(name = "crm_project[name]")
+    @FindBy(xpath = "//input[@data-ftid='crm_project_name']")
     public WebElement projectNameField;
+    public By projectNameFieldLocator = By.xpath("//input[@data-ftid='crm_project_name']");
     public CreateNewProjectPage fillProjectNameField(String nameField){
         projectNameField.sendKeys(nameField);
-        webDriverWait.until(ExpectedConditions.textToBePresentInElement(projectNameField, nameField));
+        webDriverWait.until(ExpectedConditions.presenceOfElementLocated(
+                new CreateNewProjectPage(driver).projectNameFieldLocator));
         return new CreateNewProjectPage(driver);
     }
 
@@ -45,50 +44,71 @@ public class CreateNewProjectPage extends BaseView {
 
     @FindBy(name = "crm_project[priority]")
     public WebElement priorityField;
+    public By priorityFieldLocator = By.name("crm_project[priority]");
+    @FindBy(xpath = "//select[@data-ftid='crm_project_priority']/option[@value='1']")
+    public WebElement priorityFieldSelected;
     public void selectPriorityField(){
-        new Select(priorityField).getFirstSelectedOption();
-        webDriverWait.until(ExpectedConditions.elementToBeSelected(priorityField));
+        priorityField.click();
+        priorityFieldSelected.click();
     }
+
     @FindBy(name = "crm_project[financeSource]")
     public WebElement financeSourceField;
+    public By financeSourceFieldLocator = By.name("crm_project[financeSource]");
+    @FindBy(xpath = "//select[@data-ftid='crm_project_financeSource'] /option[@value='1']")
+    public WebElement financeSourceFieldSelected;
     public void selectFinanceSourceField(){
-        new Select(financeSourceField).getFirstSelectedOption();
-        webDriverWait.until(ExpectedConditions.elementToBeSelected(financeSourceField));
+        financeSourceField.click();
+        financeSourceFieldSelected.click();
     }
+
     @FindBy(name = "crm_project[businessUnit]")
     public WebElement businessUnitField;
+    public By businessUnitFieldLocator = By.name("crm_project[businessUnit]");
+    @FindBy(xpath = "//select[@data-ftid='crm_project_businessUnit'] /option[@value='1']")
+    public WebElement businessUnitFieldSelected;
     public void selectBusinessUnitField(){
-        new Select(businessUnitField).getFirstSelectedOption();
-        webDriverWait.until(ExpectedConditions.elementToBeSelected(businessUnitField));
+        businessUnitField.click();
+        businessUnitFieldSelected.click();
     }
     @FindBy(name = "crm_project[curator]")
     public WebElement curatorField;
+    public By curatorFieldLocator = By.name("crm_project[curator]");
+    @FindBy(xpath = "//select[@data-ftid='crm_project_curator'] /option[@value='116']")
+    public WebElement curatorFieldSelected;
     public void selectCuratorField(){
-        new Select(curatorField).getFirstSelectedOption();
-        webDriverWait.until(ExpectedConditions.elementToBeSelected(curatorField));
+        curatorField.click();
+        curatorFieldSelected.click();
     }
     @FindBy(name = "crm_project[rp]")
     public WebElement rpField;
+    public By rpFieldLocator = By.name("crm_project[rp]");
+    @FindBy(xpath = "//select[@data-ftid='crm_project_rp'] /option[@value='116']")
+    public WebElement rpFieldSelected;
     public void selectRpField(){
-        new Select(rpField).getFirstSelectedOption();
-        webDriverWait.until(ExpectedConditions.elementToBeSelected(rpField));
+        rpField.click();
+        rpFieldSelected.click();
     }
     @FindBy(name = "crm_project[manager]")
     public WebElement managerProjectField;
+    public By managerProjectFieldLocator = By.name("crm_project[manager]");
+    @FindBy(xpath = "//select[@data-ftid='crm_project_manager'] /option[@value='116']")
+    public WebElement managerProjectFieldSelected;
     public void selectManagerProjectField(String managerName){
-        new Select(managerProjectField).selectByVisibleText(managerName);
-        webDriverWait.until(ExpectedConditions.textToBePresentInElement(managerProjectField, managerName));
+        managerProjectField.click();
+        managerProjectFieldSelected.click();
     }
 
     @FindBy(xpath = "//div[contains(@id, 's2id_crm_project_contactMain')]/a")
     public WebElement mainContactProjectField;
     @FindBy(xpath = "//input[@Class='select2-input select2-focused']")
     public WebElement mainContactProjectFieldFocused;
+    public By mainContactProjectFieldFocusedLocator = By.xpath("//input[@Class='select2-input select2-focused']");
     public By choseMainContactProjectFieldLocator = By.xpath("//ul[@Class='select2-results']//span[@class='select2-match']");
 
     public CreateNewProjectPage selectMainContactProjectField(String mainContactProjectName){
         mainContactProjectField.click();
-        webDriverWait.until(ExpectedConditions.elementToBeClickable(mainContactProjectFieldFocused));
+        webDriverWait.until(ExpectedConditions.presenceOfElementLocated(mainContactProjectFieldFocusedLocator));
         mainContactProjectFieldFocused.sendKeys(mainContactProjectName);
         webDriverWait.until(ExpectedConditions.presenceOfElementLocated(choseMainContactProjectFieldLocator));
         driver.findElement(choseMainContactProjectFieldLocator).click();
@@ -132,16 +152,14 @@ public class CreateNewProjectPage extends BaseView {
     public WebElement configField;
     public CreateNewProjectPage fillConfigField(String descriptionConfigField){
         configField.sendKeys(descriptionConfigField);
-        webDriverWait.until(ExpectedConditions.textToBePresentInElement(configField, descriptionConfigField));
         return new CreateNewProjectPage(driver);
     }
-    @FindBy(xpath = "//button[contains(@data-action,'{\"route\":\"crm_project_index\"}')]")
+    @FindBy(xpath = "//button[@class='btn btn-success action-button']")
     public WebElement saveAndCloseButton;
 
 
     public AllProjectsPage pushSaveAndCloseButton(){
         saveAndCloseButton.click();
-        assertThat(driver.findElement(By.xpath("//[text()='Проект сохранен']")).isDisplayed(), equalTo(true));
         return new AllProjectsPage(driver);
     }
 }

@@ -2,12 +2,15 @@ package com.geekbrains.lesson6;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class AllProjectsPage extends BaseView{
     public AllProjectsPage(WebDriver driver) {
         super(driver);
+        PageFactory.initElements(driver, this);
     }
+
     public By createNewProjectButtonLocator = By.xpath("//a[@title='Создать проект']");
     public By ifProjectIsSavedLocator = By.xpath("//*[text()='Проект сохранен']");
 
