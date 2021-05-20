@@ -159,7 +159,7 @@ public class CreateNewProjectPage extends BaseView {
 
 
     public AllProjectsPage pushSaveAndCloseButton(){
-        saveAndCloseButton.click();
+        saveAndCloseButton.submit();
         return new AllProjectsPage(driver);
     }
 }

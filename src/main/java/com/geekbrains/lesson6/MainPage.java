@@ -3,11 +3,10 @@ package com.geekbrains.lesson6;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-
-import javax.swing.*;
 
 public class MainPage extends BaseView{
     public NavigationMenu navigationMenu;
@@ -38,12 +37,11 @@ public class MainPage extends BaseView{
     @FindBy(xpath = "//span[text()='Проекты']/ancestor::a")
     public WebElement projects;
 
-    @FindBy(xpath = "//span[contains(text(),'Все проекты')]")
+    @FindBy(xpath = "//span[contains(text(),'Все проекты')]/ancestor::a")
     public WebElement allProjects;
 
-    public AllProjectsPage getAllProjectsPage(){
-        projects.click();
-        allProjects.click();
+    public AllProjectsPage getAllProjectsPage() {
+        new Actions(driver).moveToElement(projects).click(allProjects).build().perform();
         webDriverWait.until(ExpectedConditions.presenceOfElementLocated(new AllProjectsPage(driver).createNewProjectButtonLocator));
         return new AllProjectsPage(driver);
     }

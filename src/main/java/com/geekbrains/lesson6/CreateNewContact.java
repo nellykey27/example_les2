@@ -26,8 +26,8 @@ public class CreateNewContact extends BaseView{
     @FindBy (name = "crm_contact[firstName]")
     public WebElement firstNameField;
 
-    public CreateNewContact fillFirstNameField(String firstName) {
-        surnameField.sendKeys(firstName);
+    public CreateNewContact fillFirstNameField(String firstName) throws InterruptedException {
+        firstNameField.sendKeys(firstName);
         return new CreateNewContact(driver);
     }
 
@@ -39,7 +39,7 @@ public class CreateNewContact extends BaseView{
 
     public By choseCompanySelectMatch = By.xpath("//ul[@Class='select2-results']//span[@Class='select2-match']");
 
-    public CreateNewContact fillChoseCompanyField(String nameCompany){
+    public CreateNewContact fillChoseCompanyField(String nameCompany) {
         choseCompany.click();
         webDriverWait.until(ExpectedConditions.elementToBeClickable(choseCompanyFocused));
         choseCompanyFocused.sendKeys(nameCompany);
@@ -60,7 +60,7 @@ public class CreateNewContact extends BaseView{
     public WebElement saveAndCloseButton;
 
     public ContactPage submitSaveAndCloseButton(){
-        saveAndCloseButton.click();
+        saveAndCloseButton.submit();
         return new ContactPage(driver);
     }
 
