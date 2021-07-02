@@ -1,0 +1,171 @@
+{
+  "uid" : "f07a3da7f765580e",
+  "name" : "createNewProjectTest()",
+  "fullName" : "lesson6.PageObjectTests_les6.createNewProjectTest",
+  "historyId" : "60f7d3686cf311e21aceaa754eb2d2a",
+  "time" : {
+    "start" : 1621507860340,
+    "stop" : 1621507890416,
+    "duration" : 30076
+  },
+  "description" : "",
+  "status" : "broken",
+  "statusMessage" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[text()='Проект сохранен']\"}\n  (Session info: chrome=90.0.4430.212)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'LAPTOP-PD71AJPF', ip: '192.168.0.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\\Users\\nelle\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55067}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 0fa462c2452d1540b6af36404d0a07fc\n*** Element info: {Using=xpath, value=//*[text()='Проект сохранен']}",
+  "statusTrace" : "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[text()='Проект сохранен']\"}\n  (Session info: chrome=90.0.4430.212)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'LAPTOP-PD71AJPF', ip: '192.168.0.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\\Users\\nelle\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55067}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 0fa462c2452d1540b6af36404d0a07fc\n*** Element info: {Using=xpath, value=//*[text()='Проект сохранен']}\r\n\tat sun.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat lesson6.PageObjectTests_les6.createNewProjectTest(PageObjectTests_les6.java:66)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:688)\r\n\tat org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)\r\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)\r\n\tat org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)\r\n\tat org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)\r\n\tat org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)\r\n\tat org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)\r\n\tat org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)\r\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)\r\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)\r\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)\r\n\tat org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)\r\n\tat org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)\r\n\tat org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)\r\n\tat org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:210)\r\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\r\n\tat org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:206)\r\n\tat org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:131)\r\n\tat org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:65)\r\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)\r\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\r\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)\r\n\tat org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)\r\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)\r\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\r\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)\r\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)\r\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\r\n\tat org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)\r\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)\r\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\r\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)\r\n\tat org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)\r\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)\r\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\r\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)\r\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)\r\n\tat java.util.ArrayList.forEach(ArrayList.java:1259)\r\n\tat org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)\r\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)\r\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\r\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)\r\n\tat org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)\r\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)\r\n\tat org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)\r\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)\r\n\tat org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)\r\n\tat org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)\r\n\tat org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)\r\n\tat org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)\r\n\tat org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108)\r\n\tat org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)\r\n\tat org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)\r\n\tat org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)\r\n\tat org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)\r\n\tat org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96)\r\n\tat org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75)\r\n\tat com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:71)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:221)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)\r\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "LAPTOP-PD71AJPF"
+  }, {
+    "name" : "thread",
+    "value" : "14588@LAPTOP-PD71AJPF.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "lesson6.PageObjectTests_les6"
+  }, {
+    "name" : "testClass",
+    "value" : "lesson6.PageObjectTests_les6"
+  }, {
+    "name" : "testMethod",
+    "value" : "createNewProjectTest"
+  }, {
+    "name" : "suite",
+    "value" : "lesson6.PageObjectTests_les6"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "92f4cbd7693c3bf7",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[text()='Проект сохранен']\"}\n  (Session info: chrome=90.0.4430.93)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'LAPTOP-PD71AJPF', ip: '192.168.0.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\\Users\\nelle\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55677}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 1936691d5f2c3b445f439de597277fe7\n*** Element info: {Using=xpath, value=//*[text()='Проект сохранен']}",
+      "time" : {
+        "start" : 1621428311160,
+        "stop" : 1621428339763,
+        "duration" : 28603
+      }
+    }, {
+      "uid" : "72aa369b6a53003b",
+      "status" : "broken",
+      "statusDetails" : "invalid selector: Unable to locate an element with the xpath expression *//[text()='Проект сохранен'] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '*//[text()='Проект сохранен']' is not a valid XPath expression.\n  (Session info: chrome=90.0.4430.93)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'LAPTOP-PD71AJPF', ip: '192.168.0.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\\Users\\nelle\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55223}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 382c7cb1fbe30caaa7ab00923791f192\n*** Element info: {Using=xpath, value=*//[text()='Проект сохранен']}",
+      "time" : {
+        "start" : 1621428246223,
+        "stop" : 1621428275012,
+        "duration" : 28789
+      }
+    }, {
+      "uid" : "f4e5715f14ce07e5",
+      "status" : "broken",
+      "statusDetails" : "invalid selector: Unable to locate an element with the xpath expression *//[text()='Проект сохранен'] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '*//[text()='Проект сохранен']' is not a valid XPath expression.\n  (Session info: chrome=90.0.4430.93)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'LAPTOP-PD71AJPF', ip: '192.168.0.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\\Users\\nelle\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54640}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 8aa80065b3d2605627b171772553984a\n*** Element info: {Using=xpath, value=*//[text()='Проект сохранен']}",
+      "time" : {
+        "start" : 1621428123182,
+        "stop" : 1621428150448,
+        "duration" : 27266
+      }
+    }, {
+      "uid" : "91f3bf4e188e45ef",
+      "status" : "broken",
+      "statusDetails" : "invalid selector: Unable to locate an element with the xpath expression *//[text()='Проект сохранен'] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '*//[text()='Проект сохранен']' is not a valid XPath expression.\n  (Session info: chrome=90.0.4430.93)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'LAPTOP-PD71AJPF', ip: '192.168.0.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\\Users\\nelle\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53830}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 042087e02970d1596ac044cd1e1f6053\n*** Element info: {Using=xpath, value=*//[text()='Проект сохранен']}",
+      "time" : {
+        "start" : 1621427982733,
+        "stop" : 1621428011789,
+        "duration" : 29056
+      }
+    }, {
+      "uid" : "9986e2da67c07673",
+      "status" : "broken",
+      "statusDetails" : "chrome not reachable\n  (Session info: chrome=90.0.4430.93)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'LAPTOP-PD71AJPF', ip: '192.168.0.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\\Users\\nelle\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: adb0c7a58fa335995a8739b980270e83\n*** Element info: {Using=xpath, value=//a[@title='Geekbrains']}",
+      "time" : {
+        "start" : 1621427924253,
+        "stop" : 1621427976325,
+        "duration" : 52072
+      }
+    }, {
+      "uid" : "f74468d37bf406e4",
+      "status" : "broken",
+      "statusDetails" : "invalid selector: Unable to locate an element with the xpath expression *//[text()='Проект сохранен'] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '*//[text()='Проект сохранен']' is not a valid XPath expression.\n  (Session info: chrome=90.0.4430.93)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'LAPTOP-PD71AJPF', ip: '192.168.0.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\\Users\\nelle\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51190}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c5138c8e18a01254a459edbc68fd5522\n*** Element info: {Using=xpath, value=*//[text()='Проект сохранен']}",
+      "time" : {
+        "start" : 1621427615750,
+        "stop" : 1621427643989,
+        "duration" : 28239
+      }
+    }, {
+      "uid" : "e00ef333e9d52ece",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for presence of element located by: By.xpath: //input[@Class='select2-input select2-focused'] (tried for 5 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1621427392657,
+        "stop" : 1621427426297,
+        "duration" : 33640
+      }
+    }, {
+      "uid" : "d455590dee364e4d",
+      "status" : "broken",
+      "statusDetails" : "invalid selector: Unable to locate an element with the xpath expression *//[text()='Проект сохранен'] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '*//[text()='Проект сохранен']' is not a valid XPath expression.\n  (Session info: chrome=90.0.4430.93)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'LAPTOP-PD71AJPF', ip: '192.168.0.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\\Users\\nelle\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49159}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: d729297c74a9aa4d9905898be67730ca\n*** Element info: {Using=xpath, value=*//[text()='Проект сохранен']}",
+      "time" : {
+        "start" : 1621427320919,
+        "stop" : 1621427349283,
+        "duration" : 28364
+      }
+    }, {
+      "uid" : "2968c7fab40d4aaf",
+      "status" : "broken",
+      "statusDetails" : "element not interactable\n  (Session info: chrome=90.0.4430.93)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'LAPTOP-PD71AJPF', ip: '192.168.0.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\\Users\\nelle\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61349}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 13bf895a152a5319b07af0c6a50710ca",
+      "time" : {
+        "start" : 1621426690452,
+        "stop" : 1621426707206,
+        "duration" : 16754
+      }
+    }, {
+      "uid" : "599093a81e311ad9",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Chrome failed to start: was killed.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location C:\\Users\\nelle\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'LAPTOP-PD71AJPF', ip: '192.168.0.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'\nDriver info: driver.version: ChromeDriver\nremote stacktrace: Backtrace:\n\tOrdinal0 [0x0038C013+2474003]\n\tOrdinal0 [0x003229C1+2042305]\n\tOrdinal0 [0x00232F68+1060712]\n\tOrdinal0 [0x0025024D+1180237]\n\tOrdinal0 [0x0024AA83+1157763]\n\tOrdinal0 [0x0027A2A2+1352354]\n\tOrdinal0 [0x00278FAA+1347498]\n\tOrdinal0 [0x002766DB+1337051]\n\tOrdinal0 [0x00253427+1192999]\n\tOrdinal0 [0x002542EE+1196782]\n\tOrdinal0 [0x00254279+1196665]\n\tGetHandleVerifier [0x005196FC+1590332]\n\tGetHandleVerifier [0x005C8614+2306900]\n\tGetHandleVerifier [0x00419E93+543699]\n\tGetHandleVerifier [0x004192CE+540686]\n\tOrdinal0 [0x003286BA+2066106]\n\tOrdinal0 [0x0032D1C8+2085320]\n\tOrdinal0 [0x0032D308+2085640]\n\tOrdinal0 [0x003367F3+2123763]\n\tBaseThreadInitThunk [0x7608FA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77CD7A4E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77CD7A1E+238]\n",
+      "time" : {
+        "start" : 1621418707573,
+        "stop" : 1621418710625,
+        "duration" : 3052
+      }
+    }, {
+      "uid" : "1e4332013557ce73",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Chrome failed to start: was killed.\n  (chrome not reachable)\n  (The process started from chrome location C:\\Users\\nelle\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'LAPTOP-PD71AJPF', ip: '192.168.0.190', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'\nDriver info: driver.version: ChromeDriver\nremote stacktrace: Backtrace:\n\tOrdinal0 [0x0038C013+2474003]\n\tOrdinal0 [0x003229C1+2042305]\n\tOrdinal0 [0x00232F68+1060712]\n\tOrdinal0 [0x0025024D+1180237]\n\tOrdinal0 [0x0024AA83+1157763]\n\tOrdinal0 [0x0027A2A2+1352354]\n\tOrdinal0 [0x00278FAA+1347498]\n\tOrdinal0 [0x002766DB+1337051]\n\tOrdinal0 [0x00253427+1192999]\n\tOrdinal0 [0x002542EE+1196782]\n\tOrdinal0 [0x00254279+1196665]\n\tGetHandleVerifier [0x005196FC+1590332]\n\tGetHandleVerifier [0x005C8614+2306900]\n\tGetHandleVerifier [0x00419E93+543699]\n\tGetHandleVerifier [0x004192CE+540686]\n\tOrdinal0 [0x003286BA+2066106]\n\tOrdinal0 [0x0032D1C8+2085320]\n\tOrdinal0 [0x0032D308+2085640]\n\tOrdinal0 [0x003367F3+2123763]\n\tBaseThreadInitThunk [0x7608FA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77CD7A4E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77CD7A1E+238]\n",
+      "time" : {
+        "start" : 1621418635054,
+        "stop" : 1621418640495,
+        "duration" : 5441
+      }
+    }, {
+      "uid" : "e07d22b138dfb83c",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for presence of element located by: By.xpath: //a[@title='Создать проект'] (tried for 5 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1621417938273,
+        "stop" : 1621417961444,
+        "duration" : 23171
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "f07a3da7f765580e.json",
+  "parameterValues" : [ ]
+}
